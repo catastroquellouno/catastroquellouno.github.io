@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Catastro Quellouno</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui' />
+		<link rel="shortcut icon" href="images/quellouno.png">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+		<link rel="stylesheet" href="css/map.css"/>
+
+		<link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" />
+		<script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+		<link rel="stylesheet" href="css/L.Control.MousePosition.css" />
+		<script src = "js/L.Control.MousePosition.js"></script>
+		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+		<link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css" />
+		<script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.min.js"></script>
+		<script src="js/leaflet.textpath.js"></script>
+
+		<script type="text/javascript" src="json/tg_lote.js"></script>
+		<script type="text/javascript" src="json/tg_sectores.js"></script>
+		<script type="text/javascript" src="json/tg_manzana.js"></script>
+		<script type="text/javascript" src="json/edifica.js"></script>
+		<script type="text/javascript" src="json/tg_puerta.js"></script>
+		<script type="text/javascript" src="json/txt_puerta.js"></script>
+		<script type="text/javascript" src="json/uucc_piso_01.js"></script>
+		<script type="text/javascript" src="json/tg_vias.js"></script>
+		<script type="text/javascript" src="json/tg_comercio.js"></script>
+		<script type="text/javascript" src="json/piso_01.js"></script>
+		<script type="text/javascript" src="json/piso_02.js"></script>
+		<script type="text/javascript" src="json/piso_03.js"></script>
+		<script type="text/javascript" src="json/piso_01_sintecho.js"></script>
+
+
+
+		<script src="dist4/leaflet.browser.print.js"></script>
+		<script src="dist4/leaflet.browser.print.min.js"></script>
+
+		
+
+
+		<script src="js/leaflet-search.js"></script>
+		<link rel="stylesheet" href="css/leaflet-search.css" />
+
+		<script src="js/leaflet.legend.js"></script>
+		<link rel="stylesheet" href="css/leaflet.legend.css" />
+
+
+
+
+	</head>
+	<body>
+
+		<div id="map"></div>
+		<script src="js/map.js"></script>
+
+		<div id="bienvenida-container" class="hidden">
+			<!-- Contenido actual del bienvenida-container -->
+			<img id="logo" src="images/proyecto.png" alt="Logo">
+			<p>BIENVENIDO AL PROYECTO 2024 "Mejoramiento de los Servicios de Gestión Territorial para el Desarrollo Urbano Rural del Distrito de Quellouno - Provincia de La Convención - Región Cusco"</p>
+			<button id="cerrar-btn">Cerrar</button>
+			<script>// Mostrar el contenedor al cargar la página
+				document.addEventListener('DOMContentLoaded', function() {
+					document.getElementById('bienvenida-container').style.display = 'block';
+				});
+				
+				// Agregar un evento al botón de cerrar para ocultar el contenedor
+				document.getElementById('cerrar-btn').addEventListener('click', function() {
+					document.getElementById('bienvenida-container').style.display = 'none';
+				});
+				</script>
+		</div>
+	</body>
+</html>
